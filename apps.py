@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-quiz_questions = [
+quiz_questions =[
     {
         "question" : " Which of the following is used for single line comment in python?",
         "options" : ["#", "/", "\\", "*"],
@@ -19,9 +19,14 @@ quiz_questions = [
         "answer" : "a"
     },
     {
-        "question" : "what is the keyword to  define a function?",
-        "option" : ["define", "Define", "def", "Def"],
-        "answer" : "def"
+        "question" : "print(2 ** 3 ** 2)",
+        "options" : ["64", "512", "8", "16"],
+        "answer" : "512"
+    },
+    {
+        "question" :"which of the following is not a python data type?",
+        "options" : ["List", "Tuple", "Array", "Dictionary"],
+        "answer" : "Array"
     }
 ]
 
